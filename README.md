@@ -17,13 +17,13 @@ arg3 - aws region
 ./amatun -u user -p my-aws-profile -r eu-west-1  
 
 
-#troubleshooting
+# troubleshooting
 ----------
 aws: error: argument --target: expected one argument
 - is the private instance up? Is it tagged with amatun:true?
 ----------
 
-#build
+# build
 ----------
 #build in linux (AL2/RHEL) docker container or Mac (tested on Monterey, native)  
 
