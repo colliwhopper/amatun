@@ -18,14 +18,11 @@ arg3 - aws region
 
 
 # troubleshooting
-----------
 aws: error: argument --target: expected one argument
 - is the private instance up? Is it tagged with amatun:true?
-----------
 
 # build
-----------
-#build in linux (AL2/RHEL) docker container or Mac (tested on Monterey, native)  
+#built in linux (AL2) docker container and Mac (tested on Monterey, native)  
 
 yum install glibc-devel wget tar xz gzip make gcc file sudo -y  
 cd /usr/src  
@@ -41,5 +38,3 @@ mv script.sh.x amatun
 mv ./amatun /usr/bin/amatun  
 chmod +x /usr/bin/amatun  
 amatun -h  
-
------------
