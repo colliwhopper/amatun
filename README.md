@@ -1,22 +1,20 @@
 # amatun
 Binary I wrote that allows you to tunnel to AWS RDS via a PRIVATE EC2 instance
 
-# Instructions
-
-#usage prereqs
-ec2 instance in private subnet that has relevant port access to RDS instance
-SSM Session Manager plugin for the AWS CLI, nc and lsof installed on client
+# usage prereqs
+ec2 instance in private subnet that has relevant port access to RDS instance  
+SSM Session Manager plugin for the AWS CLI, nc and lsof installed on client  
 put your pub key into an existing (your?) IAM user, The bastion has a script to query IAM via the awscli for username / keys, bastion scrapes IAM for users to add
-so you create a user in IAM, then add the SSH key to the user through IAM (like you would for git)
-private instance in EC2 and rds both tagged with amatun:true
+so you create a user in IAM, then add the SSH key to the user through IAM (like you would for git)  
+private instance in EC2 and rds both tagged with amatun:true  
 
-#usage
-arg1 - ssh user
-arg2 - local aws profile
-arg3 - aws region
+# usage
+arg1 - ssh user  
+arg2 - local aws profile  
+arg3 - aws region  
 
-#example
-./amatun -u user -p my-aws-profile -r eu-west-1
+# example  
+./amatun -u user -p my-aws-profile -r eu-west-1  
 
 
 #troubleshooting
